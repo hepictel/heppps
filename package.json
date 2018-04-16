@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "HEPIC PPS Poller",
   "main": "index.js",
+  "bin": {
+    "heppps": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
