@@ -1,0 +1,28 @@
+{
+  "name": "heppps",
+  "version": "1.0.0",
+  "description": "HEPIC PPS Poller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmangani/hepps.git"
+  },
+  "keywords": [
+    "hep",
+    "pps",
+    "hepic",
+    "metrics"
+  ],
+  "author": "Lorenzo Mangani <lorenzo.mangani@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/lmangani/hepps/issues"
+  },
+  "homepage": "https://github.com/lmangani/hepps#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "request": "^2.85.0"
+  }
+}
