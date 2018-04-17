@@ -1,5 +1,5 @@
-# heppps
-HEPIC PPS Counter Stats Extraction for console and UDP loggers. Useful for measuring bottlenecking events into paStash or other tools.
+# hepPPS
+HEPIC PPS Counter Stats Extraction for console and UDP loggers. Useful for measuring bottlenecking events into paStash or other tools. Useless for any other purpose.
 
 ### Install
 ```
