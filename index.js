@@ -27,8 +27,8 @@ var scheduleAuth = function(){
 }
 
 if(argv.udp) {
-  var UDP_HOST = udp.split(':')[0];
-  var UDP_PORT = udp.split(':')[1];
+  var UDP_HOST = argv.udp.split(':')[0];
+  var UDP_PORT = argv.udp.split(':')[1];
   var client = dgram.createSocket('udp4');
 }
 
