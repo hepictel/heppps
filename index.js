@@ -7,6 +7,7 @@ var timeOut = argv.timeOut || 120 ;
 argv.apiUrl = argv.apiUrl || 'http://127.0.0.1/api';
 argv.apiUser = argv.apiUser || 'username';
 argv.apiPass = argv.apiPass || 'password';
+argv.apiType = argv.apiType || 'local';
 argv.url = argv.apiUrl + '/v2/statistic/data';
 argv.apiSess = argv.apiSess || argv.apiUrl + '/v2/session';
 argv.type = argv.type || [ "total_pps","calls_pps","regs_pps" ];
@@ -17,7 +18,7 @@ var request = require('request');
 var homercookie = request.cookie("PCAPTURESESSION="+Math.random().toString(36).slice(2)+";path=/");
 argv.jar = request.jar();
 argv.jar.setCookie(homercookie, argv.apiSess, function(error, cookie) {});
-argv.auth = JSON.stringify({ "username": argv.apiUser, "password": argv.apiPass, auth_type: "local" });
+argv.auth = JSON.stringify({ "username": argv.apiUser, "password": argv.apiPass, auth_type: argv.apiType });
 
 var scheduleAuth = function(){
 	getAuth(argv);
