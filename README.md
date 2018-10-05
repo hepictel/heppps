@@ -7,7 +7,13 @@ sudo npm install -g heppps
 ```
 ### Usage w/ UDP output every minute
 ```
-heppps --apiUrl 'http://127.0.0.1:80/api' --apiUser myusername --apiPass mypassword --interval 60000 --total true --udp '127.0.0.1:1234'
+heppps --apiUrl 'http://127.0.0.1:80/api' \
+  --apiUser myusername \
+  --apiPass mypassword \
+  --apiType local \
+  --interval 60000 \
+  --total true \
+  --udp '127.0.0.1:1234'
 ```
 #### Output
 ```
